@@ -4,22 +4,28 @@
 
 In your terminal, and at a directory/sub-directory of choice, you can run:
 
-### `git clone https://github.com/dev-willyy/yiponline-preinterview-task.git`
+```bash
+git clone https://github.com/dev-willyy/yiponline-preinterview-task.git
+```
 
 ## Installing dependencies
 
 In the project directory, you can run:
 
-### `npm install` or `npm install --force` if there's an issue resolving dependencies
+```bash
+`npm install` or `npm install --force`
+```
 
 ## Running the Application
 
 In the project directory, you can run:
 
-### `npm start` or `npm run start`
+```bash
+`npm start` or `npm run start`
+```
 
-Runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The command above runs the app in the development mode.
+- Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- The page will reload when you make changes.
+- You may also see any lint errors in the console. (You can fix it as you deem fit)
