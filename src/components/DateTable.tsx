@@ -1,6 +1,8 @@
-import { weekDays } from '../database/dates';
+import { currentDay, generateWeekDaysArray } from '../database/dates';
 
 function DateTable() {
+  const weekDays = generateWeekDaysArray(currentDay);
+
   return (
     <section className="border-2 border-purple font-fira-md mx-3">
       <main className="flex flex-col gap-2 py-2">

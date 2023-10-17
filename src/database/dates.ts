@@ -17,7 +17,7 @@ const year: number = today.getFullYear();
 
 const currentDate = `${dayNumber} ${month}, ${year}`
 
-const weekDays: Array<String> = [
+const weekDays: Array<string> = [
 	'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',
 ]
 
@@ -40,7 +40,26 @@ function autoSwitchNameOfDay(todayIndex: number): String {
 	return '';
 }
 
-const todayIndex: number = today.getDay();
-autoSwitchNameOfDay(todayIndex);
+function generateWeekDaysArray(todayIndex: number): Array<string> {
+	const weekDaysArray = [];
 
-export { currentDate, currentDay, weekDays, year, currentTime, autoSwitchNameOfDay }
+	for (let i = todayIndex + 1; i < weekDays.length; i++) {
+		weekDaysArray.push(weekDays[i])
+	}
+
+	for (let i = 0; i < todayIndex + 1; i++) {
+		weekDaysArray.push(weekDays[i])
+	}
+
+	return weekDaysArray;
+}
+
+export {
+	currentDate,
+	currentDay,
+	weekDays,
+	year,
+	currentTime,
+	autoSwitchNameOfDay,
+	generateWeekDaysArray
+}

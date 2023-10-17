@@ -14,8 +14,8 @@ function CustomersRecords() {
                 {customer.CustomerID}
               </div>
               <ul className="basis-1 shrink grow p-3 border border-purple">
-                {customer.DeliveryItems.map((item) => (
-                  <li>{item}</li>
+                {customer.DeliveryItems.map((item, index) => (
+                  <li key={index}>{item}</li>
                 ))}
               </ul>
               <div className="basis-1 shrink grow p-3 flex items-center justify-center border border-purple">
