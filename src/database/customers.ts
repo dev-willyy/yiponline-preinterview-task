@@ -1,6 +1,6 @@
 export interface Customer {
   CustomerID: number;
-  DeliveryItems: Array<String>;
+  DeliveryItems: Array<string>;
   CustomerName: String;
   PickUpLocation: String;
   DropOffLocation: String;

@@ -1,4 +1,16 @@
 import { currentDay, generateWeekDaysArray } from '../database/dates';
+import DropBoardRow from './DropBoardRow';
+
+interface Slot {
+  slotDescription: String;
+}
+
+const slotInfo: Array<Slot> = [
+  { slotDescription: 'Slot 1 (09:00am)' },
+  { slotDescription: 'Slot 2 (11:00am)' },
+  { slotDescription: 'Slot 3 (01:00pm)' },
+  { slotDescription: 'Slot 4 (03:00pm)' },
+];
 
 function DateTable() {
   const weekDays = generateWeekDaysArray(currentDay);
@@ -13,10 +25,11 @@ function DateTable() {
                 <div className="font-semibold">{day}</div>
               </div>
               <div className="basis-3/4 shrink grow border-2 border-purple">
-                <div className="border border-purple py-3">Slot 1 (09:00am)</div>
-                <div className="border border-purple py-3">Slot 2 (11:00am)</div>
-                <div className="border border-purple py-3">Slot 3 (01:00pm)</div>
-                <div className="border border-purple py-3">Slot 4 (03:00pm)</div>
+                {slotInfo.map((slot, index) => (
+                  <div key={index}>
+                    <DropBoardRow slot={slot} index={index} />
+                  </div>
+                ))}
               </div>
             </div>
           );
