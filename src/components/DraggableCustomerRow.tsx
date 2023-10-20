@@ -20,7 +20,7 @@ function DraggableCustomerRow({ customer, index }: CustomerPropTypes): ReactComp
   return (
     <div
       ref={drag}
-      className={`flex cursor-pointer text-center ${
+      className={`flex cursor-pointer text-dark bg-dim ${
         isDragging ? 'border-4 border-red-500' : 'border-2 border-purple'
       } rounded-lg mt-1 mx-1`}
     >

@@ -14,6 +14,7 @@ module.exports = {
         purple: 'rgb(128, 1, 144)',
         white: 'rgb(241, 241, 241)',
         dark: 'rgb(16, 16, 16)',
+        dim: 'rgb(202, 197, 197)',
       },
       boxShadow: {
         generalShadow: '2px 2px 3px rgb(153, 153, 153)',

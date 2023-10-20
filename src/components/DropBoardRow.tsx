@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDrop } from 'react-dnd';
 
-function DropBoardRow({ slot, index}: any) {
+function DropBoardRow({ slot, index }: any) {
   const [board, setBoard] = useState<Array<any>>([]);
   const [{ isOver }, drop] = useDrop(() => {
     return {
@@ -16,7 +16,9 @@ function DropBoardRow({ slot, index}: any) {
   }, []);
 
   const addItemToBoard = (id: number) => {
-    console.log(id);
+    // const customerList: Array<any> = slot.filter((slotItem: any) => slotItem.id === id);
+    // console.log(customerList);
+    console.log(index);
   };
 
   return (

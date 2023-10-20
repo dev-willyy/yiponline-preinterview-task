@@ -21,7 +21,7 @@ function DateTable() {
         {weekDays.map((day, index) => {
           return (
             <div className="flex cursor-pointer text-center border-2 border-purple rounded-lg mt-1 mx-1" key={index}>
-              <div className="basis-1/4 shrink grow flex items-center justify-center border-2 border-purple">
+              <div className="basis-1/4 text-dark bg-dim shrink grow flex items-center justify-center border-2 border-purple">
                 <div className="font-semibold">{day}</div>
               </div>
               <div className="basis-3/4 shrink grow border-2 border-purple">
