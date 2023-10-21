@@ -39,7 +39,7 @@ function DropBoardRow({ slot, index }: any) {
               </ul>
             </main>
           ))
-        : slot.slotDescription}
+        : ''}
     </div>
   );
 }
