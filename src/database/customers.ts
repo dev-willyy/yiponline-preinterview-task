@@ -19,7 +19,7 @@ const customers: Customers = [
   {
     CustomerID: 2,
     DeliveryItems: ['Clothes', 'Shoes'],
-    CustomerName: 'Michael Johnson',
+    CustomerName: 'Mike Woods',
     PickUpLocation: '777 Pine Avenue',
     DropOffLocation: '666 Oak Road'
   },
@@ -82,7 +82,7 @@ const customers: Customers = [
   {
     CustomerID: 11,
     DeliveryItems: ['Toys', 'Video Games'],
-    CustomerName: 'Sophie Johnson',
+    CustomerName: 'Eddy Kirk',
     PickUpLocation: '777 Pine Avenue',
     DropOffLocation: '666 Oak Road'
   },
