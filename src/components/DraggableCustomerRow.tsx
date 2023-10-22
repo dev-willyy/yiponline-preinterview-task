@@ -38,10 +38,10 @@ function DraggableCustomerRow({ customer, index }: CustomerPropTypes): ReactComp
       {customerObj && (
         <Fragment>
           <div className="basis-1 shrink grow p-3 flex items-center justify-center border-l-0 border border-purple">
-            {customerObj.CustomerName}
+            {customerObj.CustomerID}
           </div>
           <div className="basis-1 shrink grow p-3 flex items-center justify-center border border-purple">
-            {customerObj.CustomerID}
+            {customerObj.CustomerName}
           </div>
           <ul className="basis-1 shrink grow p-3 border border-purple">
             {customerObj.DeliveryItems &&
